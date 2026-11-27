@@ -1,0 +1,156 @@
+<!-- Alven -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentasi - Wifi Tetangga</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page-dokumentasi">
+    
+     <!-- NAVBAR -->
+<header class="site-header">
+    <nav class="navbar">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/images/logo.png" alt="Wifi Tetangga" class="logo-img">
+                <span class="web-name">Wifi Tetangga:<br>Portal Komunitas Mahasiswa</span>
+            </a>
+            <div class="navbar-nav flex-row ms-auto">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="komunitas.html">Komunitas</a>
+                    <a class="nav-link" href="kegiatan.html">Kegiatan</a>
+                    <a class="nav-link active" href="dokumentasi.html">Dokumentasi</a>
+                    <a class="nav-link" href="tentang.html">Tentang</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- AKHIR NAVBAR -->
+
+
+    <!-- Hero -->
+    <section class="dok-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <span class="dok-badge">👥 Galeri Kegiatan</span>
+                    <h1 class="dok-title">Abadikan Setiap Momen<br>Bersama Kami</h1>
+                    <p class="text-muted">Lihat dokumentasi berbagai kegiatan, mulai dari acara komunitas, seminar, hingga aktivitas kampus lainnya. Semua momen berharga, dalam satu tempat.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="collage">
+                        <div class="polaroid p-left"><img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=400&q=80" alt=""></div>
+                        <div class="polaroid p-center"><img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=400&q=80" alt=""></div>
+                        <div class="polaroid p-right"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&q=80" alt=""></div>
+                        <div class="cam-icon">📷</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri -->
+    <main class="container py-4 pb-5">
+        <div class="d-flex gap-2 flex-wrap mb-4">
+            <button class="chip active" onclick="filterGaleri('all', this)">Semua</button>
+            <button class="chip" onclick="filterGaleri('kegiatan', this)">Kegiatan</button>
+            <button class="chip" onclick="filterGaleri('komunitas', this)">Komunitas</button>
+            <button class="chip" onclick="filterGaleri('kampus', this)">Kampus</button>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-3 item" data-cat="kampus">
+                <img class="dok-thumb" src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=500&q=80" alt="">
+                <div class="dok-box"><div><h3>Seminar Teknologi</h3><span>🕒 12 Apr 2025</span></div><button class="arrow-btn">→</button></div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 item" data-cat="komunitas">
+                <img class="dok-thumb" src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=500&q=80" alt="">
+                <div class="dok-box"><div><h3>Community Gathering</h3><span>🕒 18 Apr 2025</span></div><button class="arrow-btn">→</button></div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 item" data-cat="kegiatan">
+                <img class="dok-thumb" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=500&q=80" alt="">
+                <div class="dok-box"><div><h3>Workshop Desain Grafis</h3><span>🕒 25 Apr 2025</span></div><button class="arrow-btn">→</button></div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 item" data-cat="kegiatan">
+                <img class="dok-thumb" src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=500&q=80" alt="">
+                <div class="dok-box"><div><h3>Turnamen Futsal</h3><span>🕒 03 Mei 2025</span></div><button class="arrow-btn">→</button></div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 item" data-cat="kampus">
+                <img class="dok-thumb" src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=500&q=80" alt="">
+                <div class="dok-box"><div><h3>Pentas Seni</h3><span>🕒 15 Mei 2025</span></div><button class="arrow-btn">→</button></div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 item" data-cat="komunitas">
+                <img class="dok-thumb" src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=500&q=80" alt="">
+                <div class="dok-box"><div><h3>Bakti Sosial</h3><span>🕒 20 Mei 2025</span></div><button class="arrow-btn">→</button></div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 item" data-cat="kampus">
+                <img class="dok-thumb" src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=500&q=80" alt="">
+                <div class="dok-box"><div><h3>Study Tour</h3><span>🕒 30 Mei 2025</span></div><button class="arrow-btn">→</button></div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 item" data-cat="komunitas">
+                <img class="dok-thumb" src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=500&q=80" alt="">
+                <div class="dok-box"><div><h3>Kegiatan Lingkungan</h3><span>🕒 07 Jun 2025</span></div><button class="arrow-btn">→</button></div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function filterGaleri(kat, el) {
+            document.querySelectorAll('.page-dokumentasi .chip').forEach(c => c.classList.remove('active'));
+            el.classList.add('active');
+            document.querySelectorAll('.page-dokumentasi .item').forEach(i => {
+                i.style.display = (kat === 'all' || i.dataset.cat === kat) ? '' : 'none';
+            });
+        }
+    </script>
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <img src="assets/images/logo.png" alt="WiFi Tetangga">
+                    <span>WiFi Tetangga<br>Student Community Portal</span>
+                </a>
+                <p>Bersama, Berkontribusi, Berprestasi.</p>
+            </div>
+
+            <div class="footer-navigation">
+                <h3>Navigasi</h3>
+                <a href="index.html">Home</a>
+                <a href="komunitas.html">Komunitas</a>
+                <a href="kegiatan.html">Kegiatan</a>
+                <a href="dokumentasi.html">Dokumentasi</a>
+                <a href="tentang.html">Tentang</a>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Kontak</h3>
+                <p>✉ portalkomunitas26@univ.edu</p>
+                <p>◎ @portalkomunitas26</p>
+            </div>
+        </div>
+
+        <div class="footer-cta">
+            <a href="pendaftaran.html" class="hero-button">Daftar Sekarang <span>→</span></a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 WiFi Tetangga. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<!-- AKHIR FOOTER -->
+</body>
+</html>
