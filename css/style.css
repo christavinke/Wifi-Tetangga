@@ -994,12 +994,15 @@ body {
 .page-kegiatan .arrow-btn {
     width: 28px;
     height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #dce3df;
     border-radius: 50%;
-    background: #FFFFFF;
+    background: white;
     color: #145c3b;
-    font-weight: 700;
     cursor: pointer;
+    text-decoration: none;
 }
 
 /* =========================
